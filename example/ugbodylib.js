@@ -188,7 +188,7 @@ class uGBodyManager {
      * You can stop this by calling _(uGBodyManager instance/variable)_`.stop()`
      * @param {(frameCount: number, body: uGBody, index: number, isbody: boolean)} show abstract function(you do it) for working with this body's data.
      */
-     run(show){
+    run(show){
         if(this.shouldStop)
             return this;
         
@@ -214,7 +214,7 @@ class uGBodyManager {
      * Does nothing, if `.run()` was not previously called.  
      * Can be restarted by calling `.restart()` & `.run(yourfxn)` again.
      * */
-     stop(){
+    stop(){
         this.shouldStop = true;
         return this;
     }
